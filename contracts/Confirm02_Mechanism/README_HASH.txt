@@ -1,0 +1,2 @@
+a2a07fe134fdf0505314e5c6239486f8aca0bdf8b9047c582e3a7ce61e2d15b2  CONTRACT_CN.md
+冻结时间 2026-11-18 10:36 UTC（用户回复"同意冻结"）
