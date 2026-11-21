@@ -1,0 +1,144 @@
+{
+ "metadata": {
+  "A": {
+   "file": "EGMS_L3_E15N10_100km_U_2020_2024_1.zip",
+   "gnss_version": "2.0",
+   "production_date": "14/10/2025",
+   "suffix": "1",
+   "has_gnss_u": true
+  },
+  "B": {
+   "file": "EGMS_L3_E15N10_100km_U_2020_2025_1.zip",
+   "gnss_version": "3",
+   "production_date": "04/09/2026",
+   "suffix": "1",
+   "has_gnss_u": true
+  }
+ },
+ "n_points": 20792,
+ "mode": "C1",
+ "notes": [
+  "GNSS model version differs (2.0 -> 3): the reference frame or model changed between releases (EGMS GNSS Calibration Report v5.2, Table 3). Compare after harmonization."
+ ],
+ "median_dg": 0.0,
+ "as_published": {
+  "T5": {
+   "n": 20792,
+   "dis": 0.0016833397460561754,
+   "n_dis": 35,
+   "n_flag": 40,
+   "built_dis": 0.0,
+   "built_flag": 0.0,
+   "pop_dis": 0.0,
+   "pop_flag": 0.0,
+   "n_movA": 37,
+   "n_movB": 8,
+   "loss": 0.8648648648648649,
+   "gain": 0.375,
+   "n_hotA": 0,
+   "n_hotB": 0,
+   "persA": NaN,
+   "persB": NaN,
+   "iou_med": NaN
+  },
+  "T10": {
+   "n": 20792,
+   "dis": 0.0,
+   "n_dis": 0,
+   "n_flag": 0,
+   "built_dis": 0.0,
+   "built_flag": 0.0,
+   "pop_dis": 0.0,
+   "pop_flag": 0.0,
+   "n_movA": 0,
+   "n_movB": 0,
+   "loss": NaN,
+   "gain": NaN,
+   "n_hotA": 0,
+   "n_hotB": 0,
+   "persA": NaN,
+   "persB": NaN,
+   "iou_med": NaN
+  },
+  "T0": {
+   "n": 20792,
+   "dis": 0.1462100808003078,
+   "n_dis": 3040,
+   "n_flag": 20276,
+   "built_dis": 0.0,
+   "built_flag": 0.0,
+   "pop_dis": 0.0,
+   "pop_flag": 0.0
+  },
+  "T05": {
+   "n": 20792,
+   "dis": 0.4192477876106195,
+   "n_dis": 8717,
+   "n_flag": 17636,
+   "built_dis": 0.0,
+   "built_flag": 0.0,
+   "pop_dis": 0.0,
+   "pop_flag": 0.0
+  }
+ },
+ "harmonized": {
+  "T5": {
+   "n": 20792,
+   "dis": 0.0016833397460561754,
+   "n_dis": 35,
+   "n_flag": 40,
+   "built_dis": 0.0,
+   "built_flag": 0.0,
+   "pop_dis": 0.0,
+   "pop_flag": 0.0,
+   "n_movA": 37,
+   "n_movB": 8,
+   "loss": 0.8648648648648649,
+   "gain": 0.375,
+   "n_hotA": 0,
+   "n_hotB": 0,
+   "persA": NaN,
+   "persB": NaN,
+   "iou_med": NaN
+  },
+  "T10": {
+   "n": 20792,
+   "dis": 0.0,
+   "n_dis": 0,
+   "n_flag": 0,
+   "built_dis": 0.0,
+   "built_flag": 0.0,
+   "pop_dis": 0.0,
+   "pop_flag": 0.0,
+   "n_movA": 0,
+   "n_movB": 0,
+   "loss": NaN,
+   "gain": NaN,
+   "n_hotA": 0,
+   "n_hotB": 0,
+   "persA": NaN,
+   "persB": NaN,
+   "iou_med": NaN
+  },
+  "T0": {
+   "n": 20792,
+   "dis": 0.1462100808003078,
+   "n_dis": 3040,
+   "n_flag": 20276,
+   "built_dis": 0.0,
+   "built_flag": 0.0,
+   "pop_dis": 0.0,
+   "pop_flag": 0.0
+  },
+  "T05": {
+   "n": 20792,
+   "dis": 0.4192477876106195,
+   "n_dis": 8717,
+   "n_flag": 17636,
+   "built_dis": 0.0,
+   "built_flag": 0.0,
+   "pop_dis": 0.0,
+   "pop_flag": 0.0
+  }
+ }
+}
