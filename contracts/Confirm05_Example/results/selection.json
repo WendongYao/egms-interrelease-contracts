@@ -1,0 +1,52 @@
+{
+ "rule": "max sum of GHSL 2020 POP at matched points over O' U N' (ties: lexicographic tile id)",
+ "tile": "E39N31",
+ "set": "N'",
+ "n_points": 353140,
+ "pop_sum": 4975259.057827376,
+ "window_centre_E": 3942750.0,
+ "window_centre_N": 3137850.0,
+ "window_side_m": 20000.0,
+ "tile_origin_E": 3900000,
+ "tile_origin_N": 3100000,
+ "osm_bbox_wgs84": {
+  "south": 50.85637456747534,
+  "west": 3.895375623610282,
+  "north": 51.81794097387337,
+  "east": 5.431615306309049
+ },
+ "n_tiles": 208,
+ "tiles_with_missing_raster": 0,
+ "top5": [
+  {
+   "tile": "E39N31",
+   "set": "N'",
+   "pop_sum": 4975259.057827376,
+   "n_no_raster": 0
+  },
+  {
+   "tile": "E55N17",
+   "set": "N'",
+   "pop_sum": 3669170.515927197,
+   "n_no_raster": 0
+  },
+  {
+   "tile": "E38N30",
+   "set": "N'",
+   "pop_sum": 3650489.852365854,
+   "n_no_raster": 0
+  },
+  {
+   "tile": "E47N28",
+   "set": "N'",
+   "pop_sum": 2445673.9516104814,
+   "n_no_raster": 0
+  },
+  {
+   "tile": "E34N18",
+   "set": "O'",
+   "pop_sum": 2330322.145064836,
+   "n_no_raster": 0
+  }
+ ]
+}
