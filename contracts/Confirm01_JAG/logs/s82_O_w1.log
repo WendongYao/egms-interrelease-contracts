@@ -1,0 +1,11 @@
+E32N22: matched=263828 epochs=(241,241) 26.5s
+E33N20: matched=548705 epochs=(241,241) 53.6s
+E34N18: matched=250518 epochs=(242,242) 25.3s
+time budget reached; rerun to resume
+E34N21: matched=443014 epochs=(242,242) 50.2s
+E35N19: matched=33381 epochs=(242,242) 3.3s
+E37N20: matched=9846 epochs=(241,241) 1.0s
+E37N22: matched=309204 epochs=(241,241) 27.9s
+E38N18: matched=25113 epochs=(240,240) 2.5s
+E38N23: matched=331300 epochs=(240,240) 29.3s
+time budget reached; rerun to resume

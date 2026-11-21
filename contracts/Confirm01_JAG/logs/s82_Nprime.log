@@ -1,0 +1,80 @@
+E16N11: matched=31708 epochs=(246,246) 2.8s
+E29N20: matched=331187 epochs=(246,246) 29.6s
+E31N23: matched=154985 epochs=(246,246) 14.6s
+E32N16: matched=544338 epochs=(247,247) 44.1s
+E38N24: matched=117254 epochs=(246,246) 10.0s
+E44N26: matched=115537 epochs=(246,246) 10.9s
+time budget reached; rerun to resume
+E46N21: matched=155186 epochs=(246,246) 9.8s
+E47N27: matched=117085 epochs=(246,246) 9.7s
+E54N22: matched=71240 epochs=(246,246) 5.0s
+E55N26: matched=49390 epochs=(246,246) 4.3s
+E30N34: matched=135273 epochs=(246,246) 11.8s
+E35N28: matched=135819 epochs=(245,245) 11.1s
+E38N30: matched=254980 epochs=(246,246) 20.0s
+E39N31: matched=353140 epochs=(246,246) 28.8s
+E39N33: matched=20759 epochs=(246,246) 2.0s
+E41N28: matched=148710 epochs=(246,246) 12.4s
+time budget reached; rerun to resume
+E44N29: matched=124522 epochs=(246,246) 10.6s
+E45N34: matched=55643 epochs=(246,246) 4.7s
+E47N28: matched=126767 epochs=(246,246) 10.7s
+E48N34: matched=100135 epochs=(209,208) 7.1s
+E49N29: matched=141359 epochs=(246,246) 11.7s
+E49N34: matched=79766 epochs=(208,208) 5.8s
+E50N29: matched=95030 epochs=(246,246) 7.9s
+E51N28: matched=77434 epochs=(246,195) 4.4s
+E51N29: matched=70925 epochs=(246,246) 6.4s
+E51N34: matched=80637 epochs=(171,171) 4.8s
+E53N28: matched=49499 epochs=(246,246) 4.4s
+E28N49: matched=568334 epochs=(90,90) 17.8s
+E33N40: matched=133656 epochs=(246,246) 10.6s
+time budget reached; rerun to resume
+E34N39: matched=578840 epochs=(245,245) 46.8s
+E35N40: matched=104903 epochs=(245,245) 8.8s
+E42N36: matched=125923 epochs=(219,219) 9.1s
+E42N37: matched=80930 epochs=(173,173) 4.8s
+E42N45: matched=55884 epochs=(109,109) 2.0s
+E44N37: matched=44700 epochs=(171,171) 2.4s
+E44N40: matched=80279 epochs=(128,128) 3.9s
+E45N45: matched=219869 epochs=(89,88) 7.3s
+E46N36: matched=45916 epochs=(170,169) 2.6s
+E46N43: matched=134711 epochs=(111,111) 5.6s
+E47N41: matched=113069 epochs=(132,132) 5.5s
+E47N49: matched=456362 epochs=(88,88) 14.6s
+time budget reached; rerun to resume
+E47N51: matched=804212 epochs=(90,90) 24.2s
+E48N39: matched=6704 epochs=(168,168) 0.5s
+E48N45: matched=72079 epochs=(107,105) 3.0s
+E52N37: matched=52504 epochs=(169,169) 3.1s
+E53N38: matched=40156 epochs=(148,148) 2.3s
+E11N25: matched=13217 epochs=(247,247) 1.3s
+E12N23: matched=8946 epochs=(247,247) 0.8s
+E12N25: matched=11239 epochs=(247,247) 1.1s
+E26N18: matched=57309 epochs=(246,246) 5.7s
+E27N17: matched=371587 epochs=(246,246) 31.5s
+E27N23: matched=68533 epochs=(246,246) 5.7s
+E28N16: matched=51848 epochs=(246,246) 4.6s
+E30N18: matched=437571 epochs=(247,247) 39.3s
+time budget reached; rerun to resume
+E36N23: matched=160146 epochs=(245,245) 13.9s
+E36N24: matched=120598 epochs=(245,245) 10.8s
+E42N21: matched=257414 epochs=(247,247) 21.8s
+E42N23: matched=73060 epochs=(246,246) 4.8s
+E45N17: matched=494 epochs=(247,247) 0.1s
+E48N20: matched=152421 epochs=(245,245) 9.9s
+E50N22: matched=5642 epochs=(246,246) 0.4s
+E54N15: matched=52245 epochs=(247,247) 4.4s
+E54N17: matched=385948 epochs=(247,247) 34.2s
+E55N17: matched=278707 epochs=(246,246) 17.8s
+time budget reached; rerun to resume
+E56N26: matched=82690 epochs=(246,246) 7.7s
+done
+E40N22: matched=220779 epochs=(246,246) 18.4s
+E45N25: matched=186746 epochs=(247,247) 15.1s
+E38N31: matched=205975 epochs=(246,246) 16.6s
+E48N32: matched=139531 epochs=(208,208) 9.6s
+E52N31: matched=92956 epochs=(212,212) 6.4s
+E32N36: matched=204595 epochs=(246,246) 17.2s
+E36N22: matched=110965 epochs=(245,245) 9.6s
+done
