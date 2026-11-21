@@ -1,0 +1,2 @@
+257ab6ea6d6132429cbd440e063711eb50ff1b4740ac25843189e827e3978af1  CONTRACT_CN.md
+Fri Nov 20 12:12:39 UTC 2026（虚拟机时钟；用户消息时间 12:13 London = UTC，回复"同意冻结"）
