@@ -2,9 +2,14 @@
 
 Pre-registration record for the study of reprocessing differences between releases of the
 European Ground Motion Service (EGMS) Ortho product (L3, vertical and east-west components).
-Author: Wendong Yao (School of Computer Science, University College Dublin; ADAPT Centre).
+Authors: Wendong Yao, Binhua Huang (ADAPT SFI Research Centre, School of Computer Science,
+University College Dublin) and Soumyabrata Dev (ADAPT, UCD; School of Computer Science and
+Statistics, Trinity College Dublin).
+Archived version: Zenodo, https://doi.org/10.5281/zenodo.24414585 (licence CC BY 4.0).
 
-Status: private deposit prepared on 2026-11-21, before manuscript submission.
+Status: prepared on 2026-11-21 and made public on 2026-11-21, at manuscript submission.
+The public deposit postdates the analyses; the freeze times below are those recorded in the
+hash files and run logs and cannot be independently time-stamped by a third party.
 
 ## Rule followed in every contract
 Each contract was written and its SHA-256 recorded in `README_HASH.txt` before any analysis
@@ -22,14 +27,21 @@ Contracts and logs are written in Chinese.
 | `contracts/Confirm02_Mechanism` | 2026-11-18 10:36 | `a2a07fe1…e2d15b2` | Decomposition of the difference along the processing chain (GNSS reference-frame term) |
 | `contracts/Confirm03_Proximity` | 2026-11-20 12:12 | `257ab6ea…e978af1` | Threshold proximity and churn baseline; GNSS offset decomposition; geographic strata; east-west component (Part D) |
 | `contracts/Confirm04_Robustness` | 2026-11-21 06:45 | `c57fbc7e…40a58` | Rounding sensitivity; spatial-block bootstrap; threshold curves; uncertainty buffer |
+| `contracts/Confirm05_Example` | 2026-11-21 08:28 | `fa8f0f9c…5f0446` | Asset-level example: alarm flips on tile E39N31 (Antwerp) with OpenStreetMap rail and motorway buffers |
 
 Each contract folder holds:
 - `CONTRACT_CN.md` (+ `AMENDMENT_1_CN.md`, `_superseded/` drafts for Confirm01), `README_HASH.txt`
 - `RUN_LOG_CN.md` (time-stamped run log with file hashes), `RESULT_CN.md` (results against the pre-set criteria)
 - `code/` with `CODE_HASHES_frozen_before_analysis.txt` (hashes recorded before results were read)
 - `results/` tile-, station- and set-level outputs with `RESULT_FILE_HASHES*.txt`
+  (Confirm05 keeps `RESULT_FILE_HASHES.txt` in the contract folder)
 - `data/` sample definitions only: tile draws, frozen parameters, file manifests, GNSS station lists
 - `logs/` extraction logs (Confirm01, Confirm02)
+
+`manuscript_scripts/` holds the scripts that build the manuscript figures and tables from the
+result files above (`build_all_figs_20261121.py`, `build_all_tables_20261121.py`). Some of
+their inputs are not included (see below), so they document how each figure was drawn rather
+than run out of the box.
 
 `tools/egms_download/` holds the download scripts. They read a CLMS service key from the
 environment variable `EGMS_SERVICE_KEY_JSON`; no key, token or credential is included.
@@ -41,10 +53,17 @@ environment variable `EGMS_SERVICE_KEY_JSON`; no key, token or credential is inc
 - Point-level result tables of Confirm01 (`part1_Nprime__by_point.csv`, `part1_Oprime__by_point.csv`).
   Their hashes remain listed in `results/RESULT_FILE_HASHES.txt`.
 - A local list of downloaded archives with machine paths (`local_egms_zips.txt`).
+- The raw OpenStreetMap Overpass response for Confirm05 (`data/osm/E39N31_overpass.json`,
+  19.1 MB, OSM data are licensed under the ODbL). It can be re-fetched with the date-pinned
+  query in `data/osm/E39N31_query.overpassql` (`[date:"2026-11-21T00:00:00Z"]`) via
+  `code/s100_osm_fetch.py`; `data/osm/E39N31_meta.json` records its size and SHA-256.
+  Map data (c) OpenStreetMap contributors, https://www.openstreetmap.org/copyright.
+- Inputs of `manuscript_scripts/` held in a local cache (EGMS point extracts, Natural Earth
+  country outlines).
 
 ## Hash check
 `python verify_hashes.py` recomputes every SHA-256 listed in the frozen hash files.
-Expected output on this deposit: 75 OK, 1 OK_PREFIX, 2 SUPERSEDED, 2 ABSENT.
+Expected output on this deposit: 83 OK, 1 OK_PREFIX, 2 SUPERSEDED, 2 ABSENT.
 - OK_PREFIX: Confirm01 `CONTRACT_CN.md`; the frozen hash covers lines 1-121, the text before
   the deviation entries were appended (`head -n 121 CONTRACT_CN.md | sha256sum`).
 - SUPERSEDED: Confirm01 `code/s89_part2.py` (deviation 2: windowed raster reading after an
@@ -58,3 +77,8 @@ Expected output on this deposit: 75 OK, 1 OK_PREFIX, 2 SUPERSEDED, 2 ABSENT.
   from an earlier exploratory probe and is included because Confirm03 reads it.
 
 `MANIFEST_SHA256.txt` lists the SHA-256 of every file in this deposit.
+
+## Licence
+This deposit is released under the Creative Commons Attribution 4.0 International licence
+(CC BY 4.0, https://creativecommons.org/licenses/by/4.0/). Third-party data referenced here
+(EGMS, NGL GNSS solutions, GHSL, OpenStreetMap) remain under their own licences.

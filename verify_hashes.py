@@ -1,4 +1,4 @@
-"""Check every SHA-256 entry in the frozen hash files of the four contracts.
+"""Check every SHA-256 entry in the frozen hash files of the five contracts.
 
 Hash files were written from different working directories, so each entry is
 looked up in order: next to the hash file, contract root, code/, results/.
@@ -26,7 +26,7 @@ contracts = sorted(d for d in os.listdir(root) if os.path.isdir(os.path.join(roo
 tot = {}
 for c in contracts:
     cd = os.path.join(root, c)
-    hfiles = [os.path.join(cd, "README_HASH.txt")] + sorted(glob.glob(os.path.join(cd, "code", "*HASH*.txt"))) + sorted(glob.glob(os.path.join(cd, "results", "*HASH*.txt")))
+    hfiles = [os.path.join(cd, "README_HASH.txt")] + sorted(x for x in glob.glob(os.path.join(cd, "*HASH*.txt")) if not x.endswith("README_HASH.txt")) + sorted(glob.glob(os.path.join(cd, "code", "*HASH*.txt"))) + sorted(glob.glob(os.path.join(cd, "results", "*HASH*.txt")))
     for hf in hfiles:
         if not os.path.isfile(hf): continue
         for line in open(hf, encoding="utf-8", errors="replace"):
